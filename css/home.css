@@ -1,0 +1,309 @@
+.section {
+    width: 100%;
+    position: relative;
+}
+
+#sec1 {
+    height: 100vh;
+
+    background-image: url('../pictures/Background-01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#sec1 .logo {
+    font-size: 36px;
+    font-weight: normal;
+    color: #fff;
+
+    position: absolute;
+    top: 55px;
+    left: 80px;
+}
+#sec1 .logo > p {
+    font-weight: bold;
+    color: #f5b402;
+
+    display: inline;
+}
+
+#sec1 .menu {
+    border-radius: 30px;
+    background-color: black;
+
+    position: absolute;
+    top: 55px;
+    right: 55px;
+
+    padding: 20px;
+}
+#sec1 .link {
+    font-size: 29px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 60px;
+
+    display: inline-block;
+
+    margin: 0 30px;
+}
+#sec1 .link:nth-child(3) {
+    font-size: 26px;
+}
+#sec1 .menu .link:hover {
+    text-decoration: underline #f5b402;
+}
+
+#sec1 .text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    z-index: 10;
+
+    transition: left .3s;
+}
+#sec1 .text p:nth-child(1) {
+    font-size: 150px;
+    font-weight: normal;
+    color: #fff;
+}
+#sec1 .text p:nth-child(2) {
+    font-size: 158px;
+    font-weight: bold;
+    color: #f5b402;
+}
+#sec1 .text p:nth-child(3) {
+    font-size: 40px;
+    font-weight: normal;
+    color: #fff;
+
+    margin-left: 20px;
+}
+
+#sec1 img#sec1_astronaut {
+    width: 30%;
+
+    position: absolute;
+    top: 20%;
+    left: 800px;
+
+    transition: top .3s;
+}
+
+#sec2 {
+    background-image: url('../pictures/LongBackground-01.jpg');
+    background-repeat: repeat;
+
+    padding-top: 800px;
+}
+
+#sec2 #sec2_text {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#sec2 #sec2_text p {
+    color: #f5b402;
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+#sec2 #sec2_text p:nth-child(1) {
+    font-weight: normal;
+}
+#sec2 #sec2_text p:nth-child(2) {
+    font-weight: bold;
+}
+
+/*#sec2 img#sec2_debris {
+    width: 55%;
+
+    position: absolute;
+    right: 0;
+}
+
+#sec2 > .transparents {
+    width: 55%;
+
+    border: 2px solid #f5b402;
+    background: transparent;
+
+    position: relative;
+
+    padding: 10px;
+}
+#sec2 > .transparents > .content {
+    width: 100%;
+    background-color: #f5b402;
+
+    position: relative;
+
+    padding: 70px 40px;
+}
+#sec2 > .transparents .heading {
+    font-size: 100px;
+    font-weight: bold;
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+#sec2 > .transparents .descript {
+    font-size: 31px;
+    font-weight: normal;
+    line-height: 60px;
+}*/
+
+#sec2 .problem {
+    width: 80%;
+
+    margin: 0 auto;
+}
+
+#sec2 .problem p {
+    font-weight: normal;
+    line-height: 55px;
+    color: #fff;
+
+    margin: 20px 0;
+}
+#sec2 .problem p.p1 {
+    font-size: 28.5px;
+}
+#sec2 .problem p.p2 {
+    font-size: 30.5px;
+}
+#sec2 .problem p.p3 {
+    font-size: 29px;
+}
+
+#sec2 .problem .infographic {
+    position: relative;
+    margin: 50px 0;
+}
+
+#sec2 .problem .infographic img {
+    width: 100%;
+}
+
+#sec2 .problem_number {
+    width: 20vw;
+
+    font-size: 4vw;
+    font-weight: normal;
+    color: #fff;
+    text-align: center;
+
+    position: absolute;
+}
+#sec2 #kgOfSpaceDebris {
+    top: 16.5vw;
+    left: 8.5vw;
+}
+#sec2 #deathSatelite {
+    top: 34.5vw;
+    left: 37vw;
+}
+#sec2 #satelitePieces {
+    top: 51vw;
+    left: 11vw;
+}
+
+#sec2 .text_box {
+    width: 64%;
+    font-size: 35px;
+    font-weight: normal;
+    color: #fff;
+    line-height: 72px;
+    border: 3px solid #f5b402;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    margin: 150px 0;
+    padding: 40px 30px;
+}
+
+#sec2 .card_container {
+    display: flex;
+    align-items: flex-end;
+
+    /*margin-top: 700px;*/
+    margin-top: 500px;
+}
+#sec2 .card_container img {
+    width: 100%;
+}
+
+/*#sec2 .card {
+    width: 100%;
+    position: relative;
+    padding: 0 50px;
+}
+#sec2 .card:nth-child(1) {
+    height: 800px;
+    background-color: #fff;
+}
+#sec2 .card:nth-child(2) {
+    height: 1400px;
+    background-color: #f5b402;
+}
+#sec2 .card:nth-child(3) {
+    height: 1000px;
+    background-color: #fff;
+}
+#sec2 .card:nth-child(4) {
+    height: 1250px;
+    background-color: #f5b402;
+}
+
+#sec2 .card .icon {
+    width: 60%;
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#sec2 .card .transparents {
+    width: 80%;
+
+    border: 4px solid black;
+    background-color: transparent;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+    margin-top: 200px;
+    padding: 10px;
+}
+#sec2 .card .content {
+    width: 100%;
+    background: black;
+
+    font-size: 35px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+
+    position: relative;
+
+    padding: 10px 0;
+}
+#sec2 .card .descript {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 30px;
+
+    margin-top: 320px;
+}*/
+
+#sec2 img#sec2_junkBuster {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    margin: 160px 0;
+}

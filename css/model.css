@@ -1,0 +1,14 @@
+#model {
+    width: 100%;
+    height: calc(100vh - 75px);
+    position: relative;
+}
+
+#model video {
+    height: 80%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

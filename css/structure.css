@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Light.woff2') format('woff2'),
+        url('../fonts/Gotham-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/GothamBlack.woff2') format('woff2'),
+        url('../fonts/GothamBlack.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    font-family: 'Gotham';
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    position: relative;
+}
+
+.link, .button {
+    cursor: pointer;
+}
+
+#resolutionFixAlert {
+    width: 100%;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, .8);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+
+    transition: top .5s;
+}
+
+#resolutionFixAlert .infographic {
+    width: 60%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#resolutionFixAlert img.image {
+    width: 100%;
+}
+#resolutionFixAlert img.button {
+    width: 12%;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+}

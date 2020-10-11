@@ -1,0 +1,94 @@
+#card {
+    height: calc(100vh - 75px);
+}
+
+#card .slider img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+
+    margin: 0 auto;
+}
+
+#card .item {
+    outline: none;
+    padding-top: calc(50vh - 225px);
+}
+
+#card .item-inner {
+    text-align: center;
+    padding: 25px;
+}
+
+#card .item-inner .name {
+    max-width: 200px;
+    line-height: 40px;
+
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+
+    margin: 5vh auto;
+}
+#card .item-inner .skill {
+    font-size: 22px;
+    font-weight: normal;
+}
+
+#card .slick-slide {
+    opacity: .3;
+    transform: scale(.8);
+
+    transition:
+        opacity ease .5s,
+        transform ease .5s;
+}
+#card .slick-slide.slick-current {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#card .slick-arrow {
+    width: 130px;
+    height: 50px;
+    border: none;
+    outline: none;
+
+    position: fixed;
+    bottom: 6%;
+    z-index: 100;
+
+    cursor: pointer;
+}
+#card .slick-prev {
+    left: 39%;
+}
+#card .slick-next {
+    background-color: #f5b402;
+    right: 39%;
+}
+
+#card .color-swatch {
+    width: 100%;
+    height: 16vh;
+    max-height: 180px;
+
+    background-image: url('../pictures/LongBackground-01.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: fixed;
+    left: 0;
+}
+#card .color-top {
+    display: none;
+}
+#card .color-bottom {
+    bottom: 0;
+}
+
+@media only screen and (min-height: 750px) {
+    #card .color-top {
+        display: block;
+    }
+}
