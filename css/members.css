@@ -12,7 +12,7 @@
 
 #card .item {
     outline: none;
-    padding-top: calc(50vh - 225px);
+    padding-top: calc(12vh - 30px);
 }
 
 #card .item-inner {
@@ -55,7 +55,7 @@
     outline: none;
 
     position: fixed;
-    bottom: 6%;
+    bottom: 4%;
     z-index: 100;
 
     cursor: pointer;
@@ -88,6 +88,10 @@
 }
 
 @media only screen and (min-height: 750px) {
+    #card .item {
+        padding-top: calc(50vh - 225px);
+    }
+
     #card .color-top {
         display: block;
     }

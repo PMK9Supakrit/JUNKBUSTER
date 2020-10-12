@@ -12,7 +12,7 @@
 }
 
 #sec1 .logo {
-    font-size: 36px;
+    font-size: 32px;
     font-weight: normal;
     color: #fff;
 
@@ -27,7 +27,7 @@
     display: inline;
 }
 
-#sec1 .menu {
+#sec1 .list_menu {
     border-radius: 30px;
     background-color: black;
 
@@ -37,7 +37,7 @@
 
     padding: 20px;
 }
-#sec1 .link {
+#sec1 .list_menu .link {
     font-size: 29px;
     font-weight: bold;
     color: #fff;
@@ -47,61 +47,71 @@
 
     margin: 0 30px;
 }
-#sec1 .link:nth-child(3) {
+#sec1 .list_menu .link:nth-child(3) {
     font-size: 26px;
 }
-#sec1 .menu .link:hover {
+#sec1 .list_menu .link:hover {
     text-decoration: underline #f5b402;
+}
+
+#sec1 .hm_menu {
+    position: absolute;
+    top: 55px;
+    right: 10%;
 }
 
 #sec1 .text {
     position: absolute;
-    top: 30%;
-    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
     z-index: 10;
 
-    transition: left .3s;
+    margin-left: 100px;
+
+    transition:
+        left .3s;
 }
 #sec1 .text p:nth-child(1) {
-    font-size: 150px;
+    font-size: 11vw;
     font-weight: normal;
     color: #fff;
 }
 #sec1 .text p:nth-child(2) {
-    font-size: 158px;
+    font-size: 11.2vw;
     font-weight: bold;
     color: #f5b402;
 }
 #sec1 .text p:nth-child(3) {
-    font-size: 40px;
+    font-size: 2.9vw;
     font-weight: normal;
     color: #fff;
 
-    margin-left: 20px;
+    margin-left: 2vw;
 }
 
-#sec1 img#sec1_astronaut {
+#sec1 img {
     width: 30%;
 
     position: absolute;
-    top: 20%;
-    left: 800px;
+    top: 26%;
+    left: 55%;
 
-    transition: top .3s;
+    transition:
+        top .3s;
 }
 
 #sec2 {
+    height: 100vh;
+
     background-image: url('../pictures/LongBackground-01.jpg');
     background-repeat: repeat;
-
-    padding-top: 800px;
 }
 
 #sec2 #sec2_text {
     position: absolute;
-    top: 100px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
 }
 #sec2 #sec2_text p {
     color: #f5b402;
@@ -114,79 +124,38 @@
 }
 #sec2 #sec2_text p:nth-child(2) {
     font-weight: bold;
+    letter-spacing: 2.5vw;
 }
 
-/*#sec2 img#sec2_debris {
-    width: 55%;
+#sec3 {
+    background-image: url('../pictures/LongBackground-01.jpg');
+    background-repeat: repeat;
 
-    position: absolute;
-    right: 0;
+    padding: 50px 0;
 }
 
-#sec2 > .transparents {
-    width: 55%;
-
-    border: 2px solid #f5b402;
-    background: transparent;
-
-    position: relative;
-
-    padding: 10px;
-}
-#sec2 > .transparents > .content {
-    width: 100%;
-    background-color: #f5b402;
-
-    position: relative;
-
-    padding: 70px 40px;
-}
-#sec2 > .transparents .heading {
-    font-size: 100px;
-    font-weight: bold;
-    text-align: center;
-
-    margin-bottom: 50px;
-}
-#sec2 > .transparents .descript {
-    font-size: 31px;
-    font-weight: normal;
-    line-height: 60px;
-}*/
-
-#sec2 .problem {
+#sec3 .problem {
     width: 80%;
-
     margin: 0 auto;
 }
 
-#sec2 .problem p {
+#sec3 .problem p {
+    font-size: 1.5vw;
     font-weight: normal;
-    line-height: 55px;
+    line-height: 3vw;
     color: #fff;
-
-    margin: 20px 0;
-}
-#sec2 .problem p.p1 {
-    font-size: 28.5px;
-}
-#sec2 .problem p.p2 {
-    font-size: 30.5px;
-}
-#sec2 .problem p.p3 {
-    font-size: 29px;
 }
 
-#sec2 .problem .infographic {
+#sec3 .problem .infographic {
     position: relative;
     margin: 50px 0;
 }
 
-#sec2 .problem .infographic img {
+#sec3 .problem .infographic img {
     width: 100%;
 }
 
-#sec2 .problem_number {
+#sec3 .problem_number {
     width: 20vw;
 
     font-size: 4vw;
@@ -196,114 +165,99 @@
 
     position: absolute;
 }
-#sec2 #kgOfSpaceDebris {
+#sec3 #kgOfSpaceDebris {
     top: 16.5vw;
     left: 8.5vw;
 }
-#sec2 #deathSatelite {
+#sec3 #deathSatelite {
     top: 34.5vw;
     left: 37vw;
 }
-#sec2 #satelitePieces {
+#sec3 #satelitePieces {
     top: 51vw;
     left: 11vw;
 }
 
-#sec2 .text_box {
-    width: 64%;
-    font-size: 35px;
+#sec3 .text_box {
+    width: 65%;
+    font-size: 1.8vw;
     font-weight: normal;
+    line-height: 4vw;
     color: #fff;
-    line-height: 72px;
+
     border: 3px solid #f5b402;
 
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-
-    margin: 150px 0;
-    padding: 40px 30px;
+    margin: 50px auto 0 auto;
+    padding: 5vw;
 }
 
-#sec2 .card_container {
-    display: flex;
-    align-items: flex-end;
-
-    /*margin-top: 700px;*/
-    margin-top: 500px;
+#sec4 {
+    background-image: url('../pictures/LongBackground-01.jpg');
+    background-repeat: repeat;
 }
-#sec2 .card_container img {
+
+#sec4 img {
     width: 100%;
 }
 
-/*#sec2 .card {
-    width: 100%;
-    position: relative;
-    padding: 0 50px;
-}
-#sec2 .card:nth-child(1) {
-    height: 800px;
-    background-color: #fff;
-}
-#sec2 .card:nth-child(2) {
-    height: 1400px;
-    background-color: #f5b402;
-}
-#sec2 .card:nth-child(3) {
-    height: 1000px;
-    background-color: #fff;
-}
-#sec2 .card:nth-child(4) {
-    height: 1250px;
-    background-color: #f5b402;
+#sec5 {
+    height: 100vh;
+
+    background-image: url('../pictures/LongBackground-01.jpg');
+    background-repeat: repeat;
 }
 
-#sec2 .card .icon {
-    width: 60%;
-    position: absolute;
-    top: -30%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-#sec2 .card .transparents {
-    width: 80%;
-
-    border: 4px solid black;
-    background-color: transparent;
+#sec5 img {
+    width: 50%;
 
     position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
-
-    margin-top: 200px;
-    padding: 10px;
+    transform: translate(-50%, -50%);
 }
-#sec2 .card .content {
-    width: 100%;
-    background: black;
 
-    font-size: 35px;
-    font-weight: bold;
-    color: #fff;
-    text-align: center;
+@media only screen and (max-width: 1360px) {
+    #sec1 .logo {
+        left: 6%;
+    }
 
-    position: relative;
+    #sec1 .hm_menu {
+        width: 60px;
+        height: 38px;
+    }
 
-    padding: 10px 0;
+    #sec1 .text {
+        width: 100%;
+        text-align: center;
+
+        margin-left: 0;
+    }
+    #sec1 .text p:nth-child(1) {
+        font-size: 15vw;
+    }
+    #sec1 .text p:nth-child(2) {
+        font-size: 15.2vw;
+    }
+    #sec1 .text p:nth-child(3) {
+        font-size: 3.8vw;
+    }
+
+    #sec1 img {
+        display: none;
+    }
+
+    #sec3 .text_box {
+        width: 80%;
+    }
 }
-#sec2 .card .descript {
-    font-size: 20px;
-    font-weight: normal;
-    line-height: 30px;
 
-    margin-top: 320px;
-}*/
+@media only screen and (max-width: 550px) {
+    #sec1 .logo {
+        font-size: 5vw;
+    }
 
-#sec2 img#sec2_junkBuster {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-
-    margin: 160px 0;
+    #sec1 .hm_menu {
+        width: 40px;
+        height: 28px;
+    }
 }

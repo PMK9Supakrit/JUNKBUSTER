@@ -1,3 +1,6 @@
+// Hamburger Menu
+let menuOpen = false;
+
 // ---Members.php---
 let intervalSlideNextFunction;
 
@@ -13,6 +16,18 @@ function load(siteName, dataTarget) {
     });
 }
 
+// Hamburger Menu
+function hamburgerMenuClick() {
+    if(menuOpen) {
+        menuOpen = false;
+        $("#slideMenu").css("right", "-100%");
+    } else {
+        menuOpen = true;
+        $("#slideMenu").css("right", "0");
+    }
+}
+
+// ---Index.php---
 function resolutionFixAlertClose() {
     $("#resolutionFixAlert").css("top", "-100%");
 }
@@ -26,29 +41,35 @@ $("document").ready(function() {
     load("home.php", "#content");
 
     // ---Home.php---
-    // Section 2
+    // Section 3
     let problemElementVis = false;
 
     $(window).scroll(function() {
         // ---Home.php---
-        let height = $(window).scrollTop();
+        let documentViewTop = $(window).scrollTop();
+        let documentViewBottom = documentViewTop + $(window).height();
+        let sec2Top = $("#sec2").offset().top;
+        let sec2Bottom = sec2Top + $("#sec2").height();
+
         let problemElementTop = $(".problem").offset().top;
 
         // ---Home.php---
         // Section 1
-        let isOpen = true;
-        if(height > 300 && isOpen) {
-            $('#sec1_text').css('left', '-40%');
-            $('#sec1_astronaut').css('top', '-40%');
-        } else if(height <= 300 && isOpen) {
-            $('#sec1_text').css('left', '10%');
-            $('#sec1_astronaut').css('top', '20%');
+        if(documentViewTop > 300) {
+            $('#sec1_text').css('left', '-100%');
+            $('#astronautImage').css('top', '-100%');
+        } else if(documentViewTop <= 300) {
+            $('#sec1_text').css('left', '0');
+            $('#astronautImage').css('top', '26%');
         }
 
         // Section 2
-        if(height > 0 && height < 1200) $('#sec2_text').css('font-size', (height / 10) + 120);
+        if(documentViewBottom <= sec2Bottom) {
+            $('#sec2_text').css('font-size', "calc(" + (documentViewTop / 8) + "px + " + 2 + "vw)");
+        }
 
-        if(!problemElementVis && height > problemElementTop) {
+        // Section 3
+        if(!problemElementVis && documentViewTop > problemElementTop) {
             problemElementVis = true;
 
             $(".problem_number").counterUp({

@@ -7,6 +7,7 @@
     <link rel="icon" href="pictures/icon.png">
 
     <link rel="stylesheet" type="text/css" href="css/slick-1.8.1.css">
+    <link rel="stylesheet" type="text/css" href="fonts/icon/fontawesome-free-5.15.1-web/css/all.css">
     <link rel="stylesheet" type="text/css" href="css/menubar.css">
     <link rel="stylesheet" type="text/css" href="css/structure.css">
     <link rel="stylesheet" type="text/css" href="css/home.css">
@@ -27,22 +28,32 @@
 <div id="menubar">
     <div class="logo link" onclick="javascript: load('home.php', '#content');">SPACE <p>WARP</p></div>
 
-    <div class="menu">
+    <div class="list_menu">
         <div class="link" onclick="javascript: load('home.php', '#content');">HOME</div>
         <div class="link" onclick="javascript: load('arcade.php', '#content');">ARCADE</div>
         <div class="link" onclick="javascript: load('members.php', '#content');">MEMBERS</div>
         <div class="link" onclick="javascript: load('model.php', '#content');">3D MODEL</div>
     </div>
+
+    <div class="hm_menu link" onclick="javascript: hamburgerMenuClick();">
+        <div class="burger"></div>
+        <div class="burger"></div>
+        <div class="burger"></div>
+    </div>
+</div>
+
+<div id="slideMenu">
+    <div class="menu">
+        <i class="fas fa-times link" onclick="javascript: hamburgerMenuClick();"></i>
+
+        <div class="link" onclick="javascript: hamburgerMenuClick(); load('home.php', '#content');">HOME</div>
+        <div class="link" onclick="javascript: hamburgerMenuClick(); load('arcade.php', '#content');">ARCADE</div>
+        <div class="link" onclick="javascript: hamburgerMenuClick(); load('members.php', '#content');">MEMBERS</div>
+        <div class="link" onclick="javascript: hamburgerMenuClick(); load('model.php', '#content');">3D MODEL</div>
+    </div>
 </div>
 
 <div id="content"></div>
-
-<div id="resolutionFixAlert">
-    <div class="infographic">
-        <img class="image" src="pictures/ResolutionSpaceWarp-01.png" alt="ResolutionSpaceWarp">
-        <img class="button" src="pictures/button.png" alt="Button" onclick="javascript: resolutionFixAlertClose();">
-    </div>
-</div>
 
 </body>
 
