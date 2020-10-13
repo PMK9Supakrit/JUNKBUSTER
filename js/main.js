@@ -1,3 +1,5 @@
+let documentWidth = $(window).width();
+
 // Hamburger Menu
 let menuOpen = false;
 
@@ -65,15 +67,19 @@ $("document").ready(function() {
 
         // Section 2
         if(documentViewBottom <= sec2Bottom) {
-            $('#sec2_text').css('font-size', "calc(" + (documentViewTop / 8) + "px + " + 2 + "vw)");
+            if(documentWidth > 1300) {
+                $('#sec2_text').css('font-size', "calc(" + (documentViewTop / 4) + "px + " + 5 + "vw)");
+            } else {
+                $('#sec2_text').css('font-size', "calc(" + (documentViewTop / 8) + "px + " + 2 + "vw)");
+            }
         }
 
         // Section 3
-        if(!problemElementVis && documentViewTop > problemElementTop) {
+        if(!problemElementVis && documentViewBottom > problemElementTop) {
             problemElementVis = true;
 
             $(".problem_number").counterUp({
-                delay: 5,
+                delay: 3,
                 time: 500
             });
         }
