@@ -62,31 +62,30 @@
 
 #sec1 .text {
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 40%;
     z-index: 10;
 
-    margin-left: 100px;
+    margin-left: 200px;
 
     transition:
         left .3s;
 }
 #sec1 .text p:nth-child(1) {
-    font-size: 11vw;
+    font-size: 7vw;
     font-weight: normal;
     color: #fff;
 }
 #sec1 .text p:nth-child(2) {
-    font-size: 11.2vw;
+    font-size: 7.2vw;
     font-weight: bold;
     color: #f5b402;
 }
 #sec1 .text p:nth-child(3) {
-    font-size: 2.9vw;
+    font-size: 1.8vw;
     font-weight: normal;
     color: #fff;
 
-    margin-left: 2vw;
+    margin-left: 1.6vw;
 }
 
 #sec1 img {
@@ -108,6 +107,8 @@
 }
 
 #sec2 #sec2_text {
+    font-size: calc(25vh + 1vw);
+
     position: absolute;
     top: 50%;
     left: 50%;
@@ -124,7 +125,7 @@
 }
 #sec2 #sec2_text p:nth-child(2) {
     font-weight: bold;
-    letter-spacing: 2.5vw;
+    letter-spacing: 1.2vw;
 }
 
 #sec3 {
@@ -147,8 +148,10 @@
 }
 
 #sec3 .problem .infographic {
+    width: 80%;
     position: relative;
-    margin: 50px 0;
+
+    margin: 50px auto;
 }
 
 #sec3 .problem .infographic img {
@@ -166,20 +169,20 @@
     position: absolute;
 }
 #sec3 #kgOfSpaceDebris {
-    top: 16.5vw;
-    left: 8.5vw;
+    top: 21vw;
+    left: .5vw;
 }
 #sec3 #deathSatelite {
-    top: 34.5vw;
-    left: 37vw;
+    top: 43.2vw;
+    left: 35.5vw;
 }
 #sec3 #satelitePieces {
-    top: 51vw;
-    left: 11vw;
+    top: 63.2vw;
+    left: 3.3vw;
 }
 
 #sec3 .text_box {
-    width: 65%;
+    width: 80%;
     font-size: 1.8vw;
     font-weight: normal;
     line-height: 4vw;
@@ -188,7 +191,7 @@
     border: 3px solid #f5b402;
 
     margin: 50px auto 0 auto;
-    padding: 5vw;
+    padding: 4vw 5vw;
 }
 
 #sec4 {
@@ -216,13 +219,13 @@
     transform: translate(-50%, -50%);
 }
 
-@media only screen and (max-width: 1360px) {
+@media only screen and (max-width: 1300px) {
     #sec1 .logo {
         left: 6%;
     }
 
     #sec1 .hm_menu {
-        width: 60px;
+        width: 45px;
         height: 38px;
     }
 
@@ -230,24 +233,32 @@
         width: 100%;
         text-align: center;
 
+        top: 50%;
+        transform: translateY(-50%);
+
         margin-left: 0;
     }
     #sec1 .text p:nth-child(1) {
-        font-size: 15vw;
+        font-size: 13vw;
     }
     #sec1 .text p:nth-child(2) {
-        font-size: 15.2vw;
+        font-size: 13.2vw;
     }
     #sec1 .text p:nth-child(3) {
-        font-size: 3.8vw;
+        font-size: 3.2vw;
     }
 
     #sec1 img {
         display: none;
     }
 
-    #sec3 .text_box {
-        width: 80%;
+    #sec2 #sec2_text {
+        font-size: calc(12.5vh + 2vw);
+    }
+
+    #sec3 .problem p {
+        font-size: 3vw;
+        line-height: 6vw;
     }
 }
 
@@ -259,5 +270,36 @@
     #sec1 .hm_menu {
         width: 40px;
         height: 28px;
+    }
+
+    #sec1 .text p:nth-child(1) {
+        font-size: 18vw;
+    }
+    #sec1 .text p:nth-child(2) {
+        font-size: 18.2vw;
+    }
+    #sec1 .text p:nth-child(3) {
+        font-size: 4.5vw;
+    }
+
+    #sec3 .problem .infographic {
+        width: 100%;
+    }
+
+    #sec3 #kgOfSpaceDebris {
+        top: 27vw;
+        left: 3.4vw;
+    }
+    #sec3 #deathSatelite {
+        top: 55vw;
+        left: 47.5vw;
+    }
+    #sec3 #satelitePieces {
+        top: 81vw;
+        left: 6.6vw;
+    }
+
+    #sec3 .text_box {
+        line-height: 6vw;
     }
 }
