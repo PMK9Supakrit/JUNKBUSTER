@@ -1,5 +1,5 @@
 <div id="card">
-    <div class="color-swatch color-top"></div>
+    <div class="color color-top"></div>
 
     <div class="slider">
         <div class="item">
@@ -46,15 +46,31 @@
         </div>
     </div>
 
-    <div class="color-swatch color-bottom"></div>
+    <div class="color color-bottom"></div>
 </div>
 
 <script>
 $("document").ready(function() {
-    $(".slider").slick({
-        centerMode: true,
-        slidesToShow: 5
-    });
+    let sliderSetting;
+
+    if(documentWidth > 1300) {
+        sliderSetting = {
+            centerMode: true,
+            slidesToShow: 5
+        }
+    } else if(documentWidth > 800) {
+        sliderSetting = {
+            centerMode: true,
+            slidesToShow: 3
+        }
+    } else {
+        sliderSetting = {
+            centerMode: true,
+            slidesToShow: 1
+        }
+    }
+
+    $(".slider").slick(sliderSetting);
 
     intervalSlideNextFunction = setInterval(slideNext, 3000);
 });

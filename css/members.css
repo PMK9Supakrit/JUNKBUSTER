@@ -12,27 +12,27 @@
 
 #card .item {
     outline: none;
-    padding-top: calc(12vh - 30px);
+    padding-top: calc(50vh - 250px);
 }
 
 #card .item-inner {
-    text-align: center;
-    padding: 25px;
+    padding: 25px 0;
 }
 
 #card .item-inner .name {
-    max-width: 200px;
-    line-height: 40px;
-
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
+    line-height: 50px;
     text-align: center;
 
-    margin: 5vh auto;
+    margin-top: 30px;
 }
 #card .item-inner .skill {
-    font-size: 22px;
+    font-size: 15px;
     font-weight: normal;
+    text-align: center;
+
+    margin-top: 100px;
 }
 
 #card .slick-slide {
@@ -54,24 +54,25 @@
     border: none;
     outline: none;
 
+    font-size: 12px;
+
     position: fixed;
-    bottom: 4%;
+    bottom: 30px;
     z-index: 100;
 
     cursor: pointer;
 }
 #card .slick-prev {
-    left: 39%;
+    left: 20%;
 }
 #card .slick-next {
     background-color: #f5b402;
-    right: 39%;
+    right: 20%;
 }
 
-#card .color-swatch {
+#card .color {
     width: 100%;
-    height: 16vh;
-    max-height: 180px;
+    height: 20vh;
 
     background-image: url('../pictures/LongBackground-01.jpg');
     background-size: cover;
@@ -80,19 +81,43 @@
     position: fixed;
     left: 0;
 }
-#card .color-top {
-    display: none;
-}
 #card .color-bottom {
     bottom: 0;
 }
 
-@media only screen and (min-height: 750px) {
+@media only screen and (max-width: 550px) {
+    #card .item-inner {
+        padding: 15px 0;
+    }
+
+    #card .slick-arrow {
+        width: 100px;
+        height: 45px;
+    }
+    #card .slick-prev {
+        left: 10%;
+    }
+    #card .slick-next {
+        right: 10%;
+    }
+}
+
+@media only screen and (max-height: 900px) {
     #card .item {
-        padding-top: calc(50vh - 225px);
+        padding-top: calc(45vh - 273px);
     }
 
     #card .color-top {
-        display: block;
+        display: none;
+    }
+}
+
+@media only screen and (max-height: 750px) {
+    #card .item {
+        padding-top: calc(45vh - 255px);
+    }
+
+    #card .item-inner .skill {
+        margin-top: 60px;
     }
 }

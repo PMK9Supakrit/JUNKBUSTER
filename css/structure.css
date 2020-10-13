@@ -37,9 +37,6 @@
 }
 
 .hm_menu {
-    width: 80px;
-    height: 80px;
-
     display: none;
 
     position: relative;
@@ -114,7 +111,7 @@
     background-color: #fff;
 }
 
-@media only screen and (max-width: 1360px) {
+@media only screen and (max-width: 1300px) {
     .list_menu {
         display: none;
     }
