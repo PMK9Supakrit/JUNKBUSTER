@@ -45,7 +45,45 @@
 </div>
 
 <div class="section" id="sec4">
-    <img src="pictures/InfographicwebwithText-01.jpg" alt="Infographic">
+    <div class="card" style="background-color: #fff;">
+        <img src="pictures/icon/Thruster.png" alt="Thruster">
+
+        <div class="transparent">
+            <div class="heading">PROPULSION</div>
+        </div>
+
+        <div class="descript">Propulsion will be provided by ion thrusters, which works by accelerating ions with electricity to create thrust. It is advantageous because it does not require liquid fuel, and can simply be powered by a solar cell. This means that it will last longer since it does not need to be refueled.</div>
+    </div>
+
+    <div class="card" style="background-color: #f5b402;">
+        <img src="pictures/icon/Detector.png" alt="Thruster">
+
+        <div class="transparent">
+            <div class="heading">DETECTION</div>
+        </div>
+
+        <div class="descript">To detect the debris, we can use a combination of cameras. They must be accurate enough to see things that are less than a millimeter in diameter from a distance. We can also detect debris from ground-based stations. Because of this, we can prioritize what we want to clean up first for maximum efficiency.</div>
+    </div>
+
+    <div class="card" style="background-color: #fff;">
+        <img src="pictures/icon/Laser.png" alt="Thruster">
+
+        <div class="transparent">
+            <div class="heading">CLEANING</div>
+        </div>
+
+        <div class="descript">In order to capture and clean up the space junk, we can use a variety of tools. The small and tiny debris can be vaporized or pushed away with a high-powered laser. Larger ones can be captured with a strong carbon-fiber net and stored in the spacecraft to be compressed. The compressed junk can either be ejected down to earth to be burned up in the atmosphere, or be recycled into extra resources for emergency repairs.</div>
+    </div>
+
+    <div class="card" style="background-color: #f5b402;">
+        <img src="pictures/icon/Control.png" alt="Thruster">
+
+        <div class="transparent">
+            <div class="heading">CONTROL</div>
+        </div>
+
+        <div class="descript">The spacecraft should be able to work in two modes. It can be controlled from ground-based stations manually. When not in manual control, it will destroy and capture any pieces of debris in its range while using the ion thrusters to maneuver and dodge debris if needed.</div>
+    </div>
 </div>
 
 <div class="section" id="sec5">
