@@ -45,6 +45,18 @@
 </div>
 
 <div class="section" id="sec4">
+    <div class="card" style="background-color: #f5b402;">
+        <img src="pictures/icon/Control.png" alt="Thruster">
+
+        <div class="transparent">
+            <div class="heading">VDO GAME</div>
+        </div>
+
+        <div class="descript">We aimed to create a web-app video game that helps convey our messages and raise awareness for the rising concerns over the space debris pollution. The video game well represents our solution to help manage the overwhelming numbers of debris in the Earth’s orbit by using our Junk Buster Space ship to collect the debris that could still be re-used as spare parts for other future space-missions, and destroy the small pieces of debris that are harmful and could not be re-cycled anymore.</div><br>
+        <div class="descript">Our team has the best intention to create a fascinating video game which would draw a large public attention to come and play our educational game of space debris.</div><br>
+        <div class="descript">We started the project by creating a 3D model of the Junk buster spaceship with a program called Solid Works, then we embedded the spaceship 3D model into another software program called Unity to develop the game coding and mechanics.</div>
+    </div>
+
     <div class="card" style="background-color: #fff;">
         <img src="pictures/icon/Thruster.png" alt="Thruster">
 
@@ -73,16 +85,6 @@
         </div>
 
         <div class="descript">In order to capture and clean up the space junk, we can use a variety of tools. The small and tiny debris can be vaporized or pushed away with a high-powered laser. Larger ones can be captured with a strong carbon-fiber net and stored in the spacecraft to be compressed. The compressed junk can either be ejected down to earth to be burned up in the atmosphere, or be recycled into extra resources for emergency repairs.</div>
-    </div>
-
-    <div class="card" style="background-color: #f5b402;">
-        <img src="pictures/icon/Control.png" alt="Thruster">
-
-        <div class="transparent">
-            <div class="heading">CONTROL</div>
-        </div>
-
-        <div class="descript">The spacecraft should be able to work in two modes. It can be controlled from ground-based stations manually. When not in manual control, it will destroy and capture any pieces of debris in its range while using the ion thrusters to maneuver and dodge debris if needed.</div>
     </div>
 </div>
 
