@@ -1,5 +1,5 @@
 <div id="arcade">
-    <iframe class="game" src="https://itch.io/embed-upload/2829134?color=000" allowfullscreen=""></iframe>
+    <iframe class="game" src="https://itch.io/embed-upload/2840879?color=000" allowfullscreen=""></iframe>
 
     <div class="descript">
         <div class="heading">GAME EXPLANATION</div>
