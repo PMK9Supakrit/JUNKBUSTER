@@ -18,6 +18,15 @@ function load(siteName, dataTarget) {
     });
 }
 
+function scrollView(elem) {
+    let docViewTop = $(window).scrollTop();
+    let docViewBottom = docViewTop + $(window).height();
+    let elemTop = $(elem).offset().top;
+    let elemBottom = elemTop + $(elem).height();
+
+    return ((docViewTop > elemTop && docViewTop < elemBottom) || (docViewBottom > elemTop && docViewBottom < elemBottom));
+}
+
 // Hamburger Menu
 function hamburgerMenuClick() {
     if(menuOpen) {
@@ -48,34 +57,29 @@ $("document").ready(function() {
 
     $(window).scroll(function() {
         // ---Home.php---
-        let documentViewTop = $(window).scrollTop();
-        let documentViewBottom = documentViewTop + $(window).height();
-        let sec2Top = $("#sec2").offset().top;
-        let sec2Bottom = sec2Top + $("#sec2").height();
-
-        let problemElementTop = $(".problem").offset().top;
+        let docViewTop = $(window).scrollTop();
 
         // ---Home.php---
         // Section 1
-        if(documentViewTop > 300) {
+        if(docViewTop > 300) {
             $('#sec1_text').css('left', '-100%');
             $('#astronautImage').css('top', '-100%');
-        } else if(documentViewTop <= 300) {
+        } else if(docViewTop <= 300) {
             $('#sec1_text').css('left', '0');
             $('#astronautImage').css('top', '26%');
         }
 
         // Section 2
-        if(documentViewBottom <= sec2Bottom) {
+        if(scrollView("#sec2")) {
             if(documentWidth > 1300) {
-                $('#sec2_text').css('font-size', "calc(" + (documentViewTop / 4) + "px + " + 5 + "vw)");
+                $('#sec2_text').css('font-size', "calc(" + (docViewTop / 12) + "px + " + 5 + "vw)");
             } else {
-                $('#sec2_text').css('font-size', "calc(" + (documentViewTop / 8) + "px + " + 2 + "vw)");
+                $('#sec2_text').css('font-size', "calc(" + (docViewTop / 14) + "px + " + 2 + "vw)");
             }
         }
 
         // Section 3
-        if(!problemElementVis && documentViewBottom > problemElementTop) {
+        if(!problemElementVis && scrollView(".problem")) {
             problemElementVis = true;
 
             $(".problem_number").counterUp({
@@ -83,5 +87,12 @@ $("document").ready(function() {
                 time: 500
             });
         }
+
+        // Section 5
+        if(scrollView("#sec5 > img:nth-child(1)")) $("#sec5 > img:nth-child(1)").css("transform", "translateX(0)");
+        if(scrollView("#sec5 > img:nth-child(2)")) $("#sec5 > img:nth-child(2)").css("transform", "translateX(0)");
+        if(scrollView("#sec5 > img:nth-child(3)")) $("#sec5 > img:nth-child(3)").css("transform", "translateX(0)");
+        if(scrollView("#sec5 > img:nth-child(4)")) $("#sec5 > img:nth-child(4)").css("transform", "translateX(0)");
+        if(scrollView("#sec5 > img:nth-child(5)")) $("#sec5 > img:nth-child(5)").css("transform", "translateX(0)");
     });
 });

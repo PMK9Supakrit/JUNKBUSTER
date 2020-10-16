@@ -107,8 +107,6 @@
 }
 
 #sec2 #sec2_text {
-    font-size: calc(25vh + 1vw);
-
     position: absolute;
     top: 50%;
     left: 50%;
@@ -249,13 +247,33 @@
 }
 
 #sec5 {
+    background-image: url('../pictures/LongBackground-01.jpg');
+    background-repeat: repeat;
+
+    overflow: hidden;
+}
+
+#sec5 img {
+    width: 100%;
+
+    transition:
+        transform .8s ease-in-out;
+}
+#sec5 img:nth-child(odd) {
+    transform: translateX(-100%);
+}
+#sec5 img:nth-child(even) {
+    transform: translateX(100%);
+}
+
+#sec6 {
     height: 100vh;
 
     background-image: url('../pictures/LongBackground-01.jpg');
     background-repeat: repeat;
 }
 
-#sec5 img {
+#sec6 img {
     width: 50%;
 
     position: absolute;
@@ -295,10 +313,6 @@
 
     #sec1 img {
         display: none;
-    }
-
-    #sec2 #sec2_text {
-        font-size: calc(12.5vh + 2vw);
     }
 
     #sec3 .problem p {
